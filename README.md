@@ -12,5 +12,5 @@
 
 ## tcat.sh
 
-## mvbbuild.config
+## mvbuild.config
 
