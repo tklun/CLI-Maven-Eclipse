@@ -14,7 +14,7 @@ if [ "$param1" = "-hot" ]; then
 	project_name=$param2
 	echo "Deploy target: $tomcat_home/$project_name"
 	echo "Run hot deploy code"
-	command="mvn -Dtomcat.home=$tomcat_home/$project_name -Dmaven.test.skip=true clean install"
+	command="mvn -Dtomcat.home=$tomcat_home/$project_name -Dmaven.test.skip=true resources:resources compile war:exploded"
 	shift 2
 else
 	if [ "$param1" = "-clean" ]; then
